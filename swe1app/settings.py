@@ -13,12 +13,10 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 import os
 
 from pathlib import Path
+from env import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*u@%8_a=o#j35+ozfr_nkdnxmf26tnumx3bj5k=0$0s$pk0ve_'
 
 ALLOWED_HOSTS = ['swe1-env.eba-mmqamnh3.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
