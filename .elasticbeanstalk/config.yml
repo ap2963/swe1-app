@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: swe1-env
+    environment: null
 environment-defaults:
   swe1-env:
     branch: null
