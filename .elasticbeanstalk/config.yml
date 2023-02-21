@@ -1,6 +1,10 @@
 branch-defaults:
   main:
     environment: swe1-env
+environment-defaults:
+  swe1-env:
+    branch: null
+    repository: null
 global:
   application_name: swe1-django-app
   branch: null
