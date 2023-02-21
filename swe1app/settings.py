@@ -13,13 +13,16 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 import os
 
 from pathlib import Path
-from dotenv import dotenv_values
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ALLOWED_HOSTS = ['swe1-env.eba-mmqamnh3.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Application definition
 
@@ -44,6 +47,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'swe1app.urls'
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 TEMPLATES = [
     {
