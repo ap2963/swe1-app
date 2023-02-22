@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': os.environ.get(RDS_VALUES['user']),
-        'PASSWORD': os.environ.get(RDS_VALUES['password']),
+        'USER': 'master',
+        'PASSWORD': 'password2023',
         'HOST': 'swe1db.cwf0veph5anw.us-west-2.rds.amazonaws.com',
         'PORT': '5432'
     }
@@ -115,7 +115,6 @@ TIME_ZONE = 'EST'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
